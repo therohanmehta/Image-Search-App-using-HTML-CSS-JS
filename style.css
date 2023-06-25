@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: bisque;
+}
+.inputdiv{
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.inputdiv input{
+    height: 30px;
+    border-radius: 5px;
+    padding: 0 10px;
+   
+}
+.inputdiv button{
+    height: 30px;
+   width: 100px;
+   background-color: aqua;
+   border: none;
+   border-radius: 5px;
+}
+
+
+.wrapper{
+    display: flex;
+    flex-wrap:wrap;
+    /* width: 100vw; */
+    justify-content:space-around; 
+    margin: 0 100px 0 100px;
+    
+}
+.image-div{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    /* border: 2px solid; */
+    align-items: center;
+/* border: 1px solid red; */
+border-radius: 5px;
+
+    width:28%;
+    margin:0 10px 20px 20px;
+}
+.image-div img{
+    
+width: 100%;
+height: 100%;
+border-radius: 5px;
+object-fit: cover;
+transition: opacity 0.5s ease-in-out;
+}
+.image-div a{
+    font-size: 20px;
+    text-decoration: none;
+    /* padding: 10px; */
+    color: black;
+    text-transform: capitalize;
+}
+.image-div a:hover{
+    color: red;
+    
+}
+.image-div img:hover{
+    opacity: 0.8;
+}
+
+.showmore-btn {
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+.showmore-btn button{
+    display: none;
+    height: 30px;
+    width: 100px;
+    background-color: rgb(5, 192, 36);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+/* .go-to-top{
+    display: block;
+} */
+
+@media screen and (max-width:768px){
+    *{
+        /* background-color: red; */
+    }
+
+    .inputdiv input{
+        width: 50vw;
+    }
+
+   .wrapper{
+    /* width: 60%; */
+    margin: 0 ;
+
+    /* border: 2px solid red; */
+
+   }
+   .image-div img{
+    margin: 0;
+    height: 200px;
+    object-fit: cover;
+   }
+}
+
+
+@media screen and (max-width:480px){
+    *{
+        /* background-color: red; */
+    }
+    .image-div img{
+        margin: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+       }
+
+.image-div{
+    /* border: 2px solid red ; */
+    width: 100%;
+    height: 100%;
+}
+
+
+
+}
